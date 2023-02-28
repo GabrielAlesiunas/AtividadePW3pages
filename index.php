@@ -11,7 +11,6 @@
 
 <header>
       <nav>
-        <a class="logo" href="/">Gabriel</a>
         <div class="mobile-menu">
           <div class="line1"></div>
           <div class="line2"></div>

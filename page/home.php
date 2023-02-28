@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="home">
-        <h1 >Atividade de PW3</h1>
-        <h6>Foi pedido para que nós fizessemos telas de : tabuada, custo de viagem, IMC e uma tela sobre. </h6>
+        <h1 class="titulo" >Atividade de PW3</h1>
+        <h2 class="titulo">Bem vindos!! Esse é um site de cálculo rapido</h2>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

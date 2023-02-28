@@ -1,7 +1,11 @@
   .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 50px auto 10px;
+    
+  }
+
+  .titulo{
+    text-align: center;
+    line-height: 50px;
   }
 
 * {
