@@ -100,9 +100,11 @@
     }
     .mobile-menu {
       display: block;
-    }
+    }    
   }
   
+
+
   .nav-list.active {
     transform: translateX(0);
   }
@@ -128,4 +130,14 @@
   
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  .img_error{
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+  .img_error img{
+    width: 20%;
+    margin-left: 35vw;
   }

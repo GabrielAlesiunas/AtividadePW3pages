@@ -51,6 +51,9 @@
                     require_once './page/404.php';
             }
         }
+        else{
+            require_once './page/404.php';
+        }
 
     ?>
 
