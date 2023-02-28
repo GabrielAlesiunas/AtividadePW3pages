@@ -10,43 +10,48 @@
 <body>
     <h1 class="text-center">Cálculo de IMC</h1>
     <form method="post" class="form-group col-6 mx-auto">
-    <div class="form-group">
-        <label for="">Digite seu peso</label>
-        <input type="number" class="form-control" name="peso">
-    </div>
+        <div class="form-group">
+            <label for="">Digite seu peso</label>
+            <input type="number" class="form-control" name="peso">
+        </div>
 
-    <div class="form-group">
-        <label for="">Digite sua altura</label>
-        <input type="text" class="form-control" name="altura">
-    </div>
-    <button class="btn btn-secondary btn-block ">Calcular</button>
+        <div class="form-group">
+            <label for="">Digite sua altura</label>
+            <input type="text" class="form-control" name="altura">
+        </div>
+        <button class="btn btn-secondary btn-block ">Calcular</button>
     </form>
+    
 
     <?php
-    $peso = $_POST ['peso'];
-    $altura = $_POST ['altura'];
-    $imc = $peso /pow ($altura,2);
-    echo "<h1 class='text-center'>Resultado</h1>";
+        if (isset($_POST['peso'])){
+            $peso = $_POST ['peso'];
+            $altura = $_POST ['altura'];
+            $imc = $peso /pow ($altura,2);
+            echo "<h1 class='text-center'>Resultado</h1>";
 
-    if($imc<18.5)
-    {
-        echo "<input type= 'text' class='form-control col-6 mx-auto' value=".$imc.">";
-        echo "<h3 class='text-center'>Magreza</h3>";
-    }
-    else if($imc>=18.5 and $imc<24.9)
-    {
-        echo "<input type= 'text' class='form-control col-6 mx-auto' value=".$imc.">";
-        echo "<h3 class='text-center'>Normal</h3>";
-    }
-    else if($imc>=24.9 and $imc<30)
-    {
-        echo "<input type= 'text' class='form-control col-6 mx-auto' value=".$imc.">";
-        echo "<h3 class='text-center'>Sobrepeso</h3>";
-    }
-    else{
-        echo "<input type= 'text' class='form-control col-6 mx-auto' value=".$imc.">";
-        echo "<h3 class='text-center'>Obesidade</h3>";
-    }
+            echo '<div class="form-group col-6 mx-auto">';
+                if($imc<18.5)
+                {
+                    echo "<input type= 'text' class='form-control col-6 mx-auto' value=".$imc.">";
+                    echo "<h3 class='text-center'>Magreza</h3>";
+                }
+                else if($imc>=18.5 and $imc<24.9)
+                {
+                    echo "<input type= 'text' class='form-control col-6 mx-auto' value=".$imc.">";
+                    echo "<h3 class='text-center'>Normal</h3>";
+                }
+                else if($imc>=24.9 and $imc<30)
+                {
+                    echo "<input type= 'text' class='form-control col-6 mx-auto' value=".$imc.">";
+                    echo "<h3 class='text-center'>Sobrepeso</h3>";
+                }
+                else{
+                    echo "<input type= 'text' class='form-control col-6 mx-auto' value=".$imc.">";
+                    echo "<h3 class='text-center'>Obesidade</h3>";
+                }
+            echo '</div>';
+        }
     ?>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
